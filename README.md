@@ -1,2 +1,2 @@
-# Trueface.ai_JS_SDK
-Trueface.ai Javascript SDK &amp; Components
+# Trueface.ai_SDK
+Trueface.ai SDK &amp; Components
