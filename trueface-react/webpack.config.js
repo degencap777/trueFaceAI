@@ -54,14 +54,14 @@ var percentage_handler = function handler(percentage, msg) {
 }
 
 var webpack_opts = {
-  entry: './src/index.ts',
+  entry: './src/index.tsx',
   target: 'node',
   output: {
     filename: libPath('index.js'),
     libraryTarget: 'commonjs2'
   },
   resolve: {
-    extensions: ['.ts', '.js'],
+    extensions: ['.ts', '.tsx', '.js'],
     modules: [
       'node_modules',
       'src',
@@ -76,6 +76,18 @@ var webpack_opts = {
         exclude: /node_modules/,
       }, {
         test: /\.ts$/,
+        loader: 'ts-loader',
+        exclude: [
+          /node_modules/
+        ],
+      },
+      {
+        enforce: 'pre',
+        test: /\.tsx$/,
+        loader: 'tslint-loader',
+        exclude: /node_modules/,
+      }, {
+        test: /\.tsx$/,
         loader: 'ts-loader',
         exclude: [
           /node_modules/
