@@ -1,6 +1,6 @@
 {
   "name": "trueface-react",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Trueface React Components",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -11,7 +11,7 @@
     "dist/index.js": "./dist/index.browser.js"
   },
   "scripts": {
-    "build": "react-scripts-ts build || webpack || echo not ok",
+    "build": "webpack || echo not ok",
     "test": "jest",
     "test:watch": "npm test -- --watch",
     "coverage": "npm test -- --coverage --no-cache",
