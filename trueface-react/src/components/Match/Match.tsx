@@ -30,7 +30,7 @@ class Match extends React.Component<MatchProps, IMatchState> {
                     Video stream not available.
                 </video>
                 <section className="toolbar">
-                    <button onClick={(e) => this.takePhoto()}>Take photos</button>
+                    <button onClick={(e) => this.takePhoto()}>Take photo</button>
                 </section>
                 <canvas ref={(canvas) => this.canvas = canvas} />
             </div>

@@ -1,22 +1,32 @@
 import * as React from 'react';
 import './App.css';
 
-import { Trueface } from 'trueface-sdk';
 import { Match } from 'trueface-react';
+import { SpoofDetection } from 'trueface-sdk';
 
 class App extends React.Component {
-
-  constructor(props: object) {
-    super(props);
-    Trueface.key = 'your-key-here';
-  }
 
   render() {
     return (
       <div className="App">
         <Match
-          onPhotoTaken={(photo: string) => {
-            // console.log(photo);
+          onPhotoTaken={async (photo: string) => {
+            // trueface api
+            const sd = new SpoofDetection();
+            sd.image = photo;
+            const response: Response = await sd.post();
+
+            // html5 api
+            if (!response.ok) {
+              throw new Error('api call failed');
+            }
+
+            const result = await response.json();
+            if (result.success) {
+              alert(result.data.class);
+            } else {
+              alert(result.message);
+            }
           }}
         />
       </div>

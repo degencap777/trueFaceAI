@@ -6415,13 +6415,13 @@ trim-right@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/trim-right/-/trim-right-1.0.1.tgz#cb2e1203067e0c8de1f614094b9fe45704ea6003"
 
-"trueface-react@^0.1.6":
-  version "0.1.6"
-  resolved "https://registry.yarnpkg.com/trueface-react/-/trueface-react-0.1.6.tgz#19b189bf417becbd9b908d915163ba32f963ccd2"
+"trueface-react@^0.1.8":
+  version "0.1.8"
+  resolved "https://registry.yarnpkg.com/trueface-react/-/trueface-react-0.1.8.tgz#decc75dabecda8887fe6fa5946ac0e594aee0652"
 
-"trueface-sdk@^0.2.2":
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/trueface-sdk/-/trueface-sdk-0.2.2.tgz#cbce8f91ddb2bb6bbd6e98ca93002e8ab480e36c"
+"trueface-sdk@^0.2.3":
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/trueface-sdk/-/trueface-sdk-0.2.3.tgz#75c3bf67df2e4859a1f354fa392db528a626e45a"
 
 ts-jest@^20.0.7:
   version "20.0.14"
