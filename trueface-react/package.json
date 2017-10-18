@@ -1,6 +1,6 @@
 {
   "name": "trueface-react",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Trueface React Components",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
