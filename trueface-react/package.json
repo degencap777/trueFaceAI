@@ -1,6 +1,6 @@
 {
   "name": "trueface-react",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Trueface React Components",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -61,9 +61,7 @@
     "react": "^15.4.2",
     "react-dom": "^15.4.2"
   },
-  "dependencies": {
-
-  },
+  "dependencies": {},
   "jest": {
     "transform": {
       ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
