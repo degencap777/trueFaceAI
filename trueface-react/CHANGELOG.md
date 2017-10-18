@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.1.8"></a>
+## [0.1.8](https://github.com/getchui/Trueface.ai_SDK/compare/v0.2.3...v0.1.8) (2017-10-18)
+
+
+
 <a name="0.1.7"></a>
 ## [0.1.7](https://github.com/getchui/Trueface.ai_SDK/compare/v0.1.6...v0.1.7) (2017-10-18)
 
