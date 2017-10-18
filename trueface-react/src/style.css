@@ -1,0 +1,40 @@
+.host {
+    position: relative;
+        max-width: 640px;
+}
+.host canvas {
+    display: none;
+}
+.host .toolbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+.host video {
+    display: block;
+    width: 640px;
+    height: 480px;
+    object-fit: cover;
+}
+.host button {
+    padding: 8px;
+    margin: 8px;
+}
+.host .photos {
+    overflow-y: scroll;
+    opacity: .3;
+    background-color: #ddd;
+    border: 1px solid #333;
+    position: absolute;
+    width: 100px;
+    height: 450px;
+    display: block;
+    z-index: 10;
+
+}
+.host .photos img {
+    width: 100%;
+}
