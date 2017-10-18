@@ -16,7 +16,7 @@ class App extends React.Component {
       <div className="App">
         <Match
           onPhotoTaken={(photo: string) => {
-            console.log(photo);
+            // console.log(photo);
           }}
         />
       </div>

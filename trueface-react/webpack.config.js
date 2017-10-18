@@ -69,6 +69,7 @@ var webpack_opts = {
   },
   module: {
     loaders: [
+      { test: /\.css$/, loader: "style-loader!css-loader" },
       {
         enforce: 'pre',
         test: /\.ts$/,
