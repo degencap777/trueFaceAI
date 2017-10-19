@@ -7,6 +7,7 @@ var os = require('os');
 var deleteEmpty = require('delete-empty');
 var PACKAGE_FILE = JSON.parse(fs.readFileSync(path.join(__dirname, 'package.json'), 'utf-8'));
 var LIB_NAME = PACKAGE_FILE.name;
+var TypedocWebpackPlugin = require('typedoc-webpack-plugin');
 
 /* helper function to get into build directory */
 var libPath = function (name) {
@@ -94,7 +95,8 @@ var webpack_opts = {
         }
       }
     }),
-    new webpack.ProgressPlugin(percentage_handler)
+    new webpack.ProgressPlugin(percentage_handler),
+    new TypedocWebpackPlugin({}, './src')
   ],
 }
 

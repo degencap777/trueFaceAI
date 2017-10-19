@@ -7,6 +7,9 @@ export default class Enroll extends TruefaceBase {
     public set name(name: string) {
         this.data[`name`] = name;
     }
+    public set collectionId(collectionId: string) {
+        this.data[`collection_id`] = collectionId;
+    }
     public add(image: string) {
         this.data[`img${this.length}`] = image;
         this.length++;

@@ -14,7 +14,7 @@ class App extends React.Component {
             // trueface api
             const sd = new SpoofDetection();
             sd.image = photo;
-            const response: Response = await sd.post();
+            const response = await sd.post();
 
             // html5 api
             if (!response.ok) {

@@ -1,5 +1,7 @@
 import TruefaceBase from "./TruefaceBase";
 export default class FaceDetection extends TruefaceBase {
-    readonly endpoint: string;
-    inage: string;
+    endpoint: string;
+    private rawlandmarks;
+    image: string;
+    post(): Promise<Response>;
 }
