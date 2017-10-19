@@ -1,6 +1,6 @@
 # Trueface.ai SDKs, Components & Libraries
 
-[Trueface SDK](./tree/master/trueface-sdk) - Typescript / Javascript SDK
+[Trueface SDK](../../tree/master/trueface-sdk) - Typescript / Javascript SDK
 
 [Trueface React](./tree/master/trueface-react) - React Components
 
