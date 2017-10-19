@@ -23,7 +23,7 @@ class App extends React.Component {
 
             const result = await response.json();
             if (result.success) {
-              alert(result.data.class);
+              // 
             } else {
               alert(result.message);
             }
