@@ -1,0 +1,43 @@
+<html>
+
+<head>
+    <script src="https://unpkg.com/react@16.0.0/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16.0.0/umd/react-dom.development.js"></script>
+
+    <!-- https://github.com/getchui/Trueface.ai_SDK/blob/master/trueface-sdk/dist/index.browser.js -->
+    <script src="./trueface-sdk_index.browser.js"></script>
+    <!-- https://github.com/getchui/Trueface.ai_SDK/blob/master/trueface-react/dist/index.browser.js -->
+    <script src="./trueface-react_index.browser.js"></script>
+</head>
+
+<body>
+    <div id="root" />
+    <script>
+        truefaceSdk.Trueface.key = "your-key-here";
+
+        class App extends React.Component {
+            render() {
+                return React.createElement('div', null, [
+                    React.createElement(truefaceReact.Match, {
+                        key: "unique-key",
+                        onPhotoTaken: (photo) => {
+                            let sd = new truefaceSdk.SpoofDetection();
+                            sd.image = photo;
+                            sd.post()
+                                .then(resp => resp.json())
+                                .then(data => console.log(data))
+                                .catch(err => console.error(err))
+                        }
+                    }, null)
+                ]);
+            }
+        }
+
+        ReactDOM.render(
+            React.createElement(App, null, null),
+            document.getElementById('root')
+        );
+    </script>
+</body>
+
+</html>
