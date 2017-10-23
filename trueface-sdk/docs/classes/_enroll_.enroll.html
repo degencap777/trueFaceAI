@@ -96,7 +96,10 @@
 							<h3>Accessors</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-set-signature tsd-parent-kind-class"><a href="_enroll_.enroll.html#collectionid" class="tsd-kind-icon">collection<wbr>Id</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_enroll_.enroll.html#delete" class="tsd-kind-icon">delete</a></li>
+								<li class="tsd-kind-set-signature tsd-parent-kind-class"><a href="_enroll_.enroll.html#enrollmentid" class="tsd-kind-icon">enrollment<wbr>Id</a></li>
 								<li class="tsd-kind-set-signature tsd-parent-kind-class"><a href="_enroll_.enroll.html#name" class="tsd-kind-icon">name</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_enroll_.enroll.html#put" class="tsd-kind-icon">put</a></li>
 								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_enroll_.enroll.html#size" class="tsd-kind-icon">size</a></li>
 							</ul>
 						</section>
@@ -119,7 +122,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_truefacebase_.truefacebase.html">TruefaceBase</a>.<a href="_truefacebase_.truefacebase.html#data">data</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/getchui/Trueface.ai_SDK/blob/1d080ac/trueface-sdk/src/TruefaceBase.ts#L5">TruefaceBase.ts:5</a></li>
+							<li>Defined in <a href="https://github.com/getchui/Trueface.ai_SDK/blob/31a82bf/trueface-sdk/src/TruefaceBase.ts#L5">TruefaceBase.ts:5</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -130,7 +133,7 @@
 					<aside class="tsd-sources">
 						<p>Overrides <a href="_truefacebase_.truefacebase.html">TruefaceBase</a>.<a href="_truefacebase_.truefacebase.html#endpoint">endpoint</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/getchui/Trueface.ai_SDK/blob/1d080ac/trueface-sdk/src/Enroll.ts#L5">Enroll.ts:5</a></li>
+							<li>Defined in <a href="https://github.com/getchui/Trueface.ai_SDK/blob/31a82bf/trueface-sdk/src/Enroll.ts#L5">Enroll.ts:5</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -140,7 +143,7 @@
 					<div class="tsd-signature tsd-kind-icon">length<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/getchui/Trueface.ai_SDK/blob/1d080ac/trueface-sdk/src/Enroll.ts#L6">Enroll.ts:6</a></li>
+							<li>Defined in <a href="https://github.com/getchui/Trueface.ai_SDK/blob/31a82bf/trueface-sdk/src/Enroll.ts#L6">Enroll.ts:6</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -157,13 +160,53 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/getchui/Trueface.ai_SDK/blob/1d080ac/trueface-sdk/src/Enroll.ts#L10">Enroll.ts:10</a></li>
+									<li>Defined in <a href="https://github.com/getchui/Trueface.ai_SDK/blob/31a82bf/trueface-sdk/src/Enroll.ts#L10">Enroll.ts:10</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>collectionId: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="delete" class="tsd-anchor"></a>
+					<h3>delete</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> delete<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Response</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/getchui/Trueface.ai_SDK/blob/31a82bf/trueface-sdk/src/Enroll.ts#L29">Enroll.ts:29</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Response</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-set-signature tsd-parent-kind-class">
+					<a name="enrollmentid" class="tsd-anchor"></a>
+					<h3>enrollment<wbr>Id</h3>
+					<ul class="tsd-signatures tsd-kind-set-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> enrollmentId<span class="tsd-signature-symbol">(</span>enrollmentId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/getchui/Trueface.ai_SDK/blob/31a82bf/trueface-sdk/src/Enroll.ts#L13">Enroll.ts:13</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>enrollmentId: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -180,7 +223,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/getchui/Trueface.ai_SDK/blob/1d080ac/trueface-sdk/src/Enroll.ts#L7">Enroll.ts:7</a></li>
+									<li>Defined in <a href="https://github.com/getchui/Trueface.ai_SDK/blob/31a82bf/trueface-sdk/src/Enroll.ts#L7">Enroll.ts:7</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -194,6 +237,23 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="put" class="tsd-anchor"></a>
+					<h3>put</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> put<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Response</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/getchui/Trueface.ai_SDK/blob/31a82bf/trueface-sdk/src/Enroll.ts#L23">Enroll.ts:23</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Response</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
 					<a name="size" class="tsd-anchor"></a>
 					<h3>size</h3>
 					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
@@ -203,7 +263,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/getchui/Trueface.ai_SDK/blob/1d080ac/trueface-sdk/src/Enroll.ts#L17">Enroll.ts:17</a></li>
+									<li>Defined in <a href="https://github.com/getchui/Trueface.ai_SDK/blob/31a82bf/trueface-sdk/src/Enroll.ts#L20">Enroll.ts:20</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -223,7 +283,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/getchui/Trueface.ai_SDK/blob/1d080ac/trueface-sdk/src/Enroll.ts#L13">Enroll.ts:13</a></li>
+									<li>Defined in <a href="https://github.com/getchui/Trueface.ai_SDK/blob/31a82bf/trueface-sdk/src/Enroll.ts#L16">Enroll.ts:16</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -240,16 +300,22 @@
 					<a name="post" class="tsd-anchor"></a>
 					<h3>post</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">post<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Response</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">post<span class="tsd-signature-symbol">(</span>fetchMethod<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Response</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_truefacebase_.truefacebase.html">TruefaceBase</a>.<a href="_truefacebase_.truefacebase.html#post">post</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/getchui/Trueface.ai_SDK/blob/1d080ac/trueface-sdk/src/TruefaceBase.ts#L6">TruefaceBase.ts:6</a></li>
+									<li>Defined in <a href="https://github.com/getchui/Trueface.ai_SDK/blob/31a82bf/trueface-sdk/src/TruefaceBase.ts#L6">TruefaceBase.ts:6</a></li>
 								</ul>
 							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> fetchMethod: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;POST&quot;</span></h5>
+								</li>
+							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Response</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
@@ -262,6 +328,9 @@
 					<li class="globals  ">
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_collection_.html">"<wbr>Collection"</a>
+					</li>
 					<li class="current tsd-kind-external-module">
 						<a href="../modules/_enroll_.html">"<wbr>Enroll"</a>
 					</li>
@@ -269,10 +338,16 @@
 						<a href="../modules/_facedetection_.html">"<wbr>Face<wbr>Detection"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
+						<a href="../modules/_identify_.html">"<wbr>Identify"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
 						<a href="../modules/_match_.html">"<wbr>Match"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_spoofdetection_.html">"<wbr>Spoof<wbr>Detection"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_train_.html">"<wbr>Train"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_trueface_.html">"<wbr>Trueface"</a>
@@ -304,8 +379,17 @@
 							<li class=" tsd-kind-set-signature tsd-parent-kind-class">
 								<a href="_enroll_.enroll.html#collectionid" class="tsd-kind-icon">collection<wbr>Id</a>
 							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="_enroll_.enroll.html#delete" class="tsd-kind-icon">delete</a>
+							</li>
+							<li class=" tsd-kind-set-signature tsd-parent-kind-class">
+								<a href="_enroll_.enroll.html#enrollmentid" class="tsd-kind-icon">enrollment<wbr>Id</a>
+							</li>
 							<li class=" tsd-kind-set-signature tsd-parent-kind-class">
 								<a href="_enroll_.enroll.html#name" class="tsd-kind-icon">name</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="_enroll_.enroll.html#put" class="tsd-kind-icon">put</a>
 							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
 								<a href="_enroll_.enroll.html#size" class="tsd-kind-icon">size</a>
