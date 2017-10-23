@@ -4,7 +4,7 @@ import TruefaceBase from "./TruefaceBase";
 export default class FaceDetection extends TruefaceBase {
     public endpoint: string = `${Trueface.base}/v1/facedetect`;
     private rawlandmarks: boolean = false;
-    set image(img: string) {
+    public set image(img: string) {
         this.data[`img`] = img;
     }
     public post(): Promise<Response> {
