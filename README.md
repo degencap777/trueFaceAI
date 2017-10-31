@@ -6,4 +6,4 @@
 
 [Trueface React Example](../../tree/master/trueface-react-example) - A sample react project using both trueface sdk and trueface react
 
-[API Docs](https://getchui.github.io/Trueface.ai_SDK/)
+[SDK API Reference](https://getchui.github.io/Trueface.ai_SDK/)
